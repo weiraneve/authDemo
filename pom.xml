@@ -24,6 +24,7 @@
 
     <modules>
         <module>oauth2-basic</module>
+        <module>oauth2-JWT</module>
     </modules>
 
     <properties>
