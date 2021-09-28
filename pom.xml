@@ -25,6 +25,8 @@
     <modules>
         <module>oauth2-basic</module>
         <module>oauth2-JWT</module>
+        <module>oauth2-sso</module>
+        <module>oauth2-sso-client</module>
     </modules>
 
     <properties>

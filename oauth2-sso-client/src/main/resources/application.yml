@@ -1,0 +1,21 @@
+server:
+  port: 8089
+  servlet:
+    session:
+      cookie:
+        name: OAUTH2-CLIENT-SESSIONID #防止Cookie冲突，冲突会导致登录验证不通过
+oauth2-server-url: http://localhost:8088
+spring:
+  application:
+    name: oauth2-client
+security:
+  oauth2: #与oauth2-server对应的配置
+    client:
+      client-id: jouav
+      client-secret: jouav1234
+      user-authorization-uri: ${oauth2-server-url}/oauth/authorize
+      access-token-uri: ${oauth2-server-url}/oauth/token
+    resource:
+      jwt:
+        key-uri: ${oauth2-server-url}/oauth/token_key
+        key-value: test_key #认证服务器配置的token签名秘钥不配置会启动报错
