@@ -1,5 +1,7 @@
 package com.weiran.auth.service;
 
+import com.weiran.auth.bo.UserBO;
+import com.weiran.auth.myexception.TokenException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.AuthorityUtils;
 import org.springframework.security.core.userdetails.User;
@@ -20,26 +22,20 @@ import java.util.stream.Collectors;
  */
 @Service
 public class UserService implements UserDetailsService {
-    private List<User> userList;
+
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    @PostConstruct
-    public void initData() {
-        String password = passwordEncoder.encode("123456");
-        userList = new ArrayList<>();
-        userList.add(new User("macro", password, AuthorityUtils.commaSeparatedStringToAuthorityList("admin")));
-        userList.add(new User("andy", password, AuthorityUtils.commaSeparatedStringToAuthorityList("client")));
-        userList.add(new User("mark", password, AuthorityUtils.commaSeparatedStringToAuthorityList("client")));
-    }
-
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        List<User> findUserList = userList.stream().filter(user -> user.getUsername().equals(username)).collect(Collectors.toList());
-        if (!CollectionUtils.isEmpty(findUserList)) {
-            return findUserList.get(0);
+        UserBO userBO = new UserBO();
+        if (username.startsWith("jou")) {
+            userBO.setUserId(123L);
+            userBO.setUsername(username);
+            userBO.setPassword(passwordEncoder.encode("jouav1234"));
         } else {
-            throw new UsernameNotFoundException("用户名或密码错误");
+            throw new TokenException(400, "用户不存在!!!");
         }
+        return userBO;
     }
 }

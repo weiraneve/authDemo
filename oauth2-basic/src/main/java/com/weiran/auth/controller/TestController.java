@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
  *
  */
 @RestController
-@RequestMapping("/user")
-public class UserController {
-    @GetMapping("/test")
-    public Object getCurrentUser(Authentication authentication) {
+@RequestMapping("/test")
+public class TestController {
+    @GetMapping("/show")
+    public Object getCurrentTest(Authentication authentication) {
         return authentication.getPrincipal();
     }
 }
