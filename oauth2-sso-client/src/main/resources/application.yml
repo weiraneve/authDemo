@@ -12,7 +12,7 @@ security:
   oauth2: #与oauth2-server对应的配置
     client:
       client-id: jouav
-      client-secret: jouav1234
+      client-secret: Jouav1234
       user-authorization-uri: ${oauth2-server-url}/oauth/authorize
       access-token-uri: ${oauth2-server-url}/oauth/token
     resource:
