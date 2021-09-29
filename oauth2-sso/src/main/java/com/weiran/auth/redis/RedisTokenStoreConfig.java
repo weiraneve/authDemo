@@ -10,7 +10,7 @@ import org.springframework.security.oauth2.provider.token.store.redis.RedisToken
 /**
  * 使用redis存储token的配置
  */
-@Configuration
+//@Configuration
 public class RedisTokenStoreConfig {
 
     @Autowired

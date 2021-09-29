@@ -79,6 +79,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
                 .scopes("all")
                 .secret(passwordEncoder.encode("Jouav1234"))
                 .redirectUris("http://localhost:8089/login") //单点登录时配置
+                .autoApprove(true) //自动授权配置
                 .authorizedGrantTypes("password", "authorization_code", "refresh_token")
                 .accessTokenValiditySeconds(60 * 60)
                 .refreshTokenValiditySeconds(60 * 60 * 24)
@@ -86,6 +87,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
                 .withClient("jouav_month")
                 .scopes("all")
                 .redirectUris("http://localhost:8089/login") //单点登录时配置
+                .autoApprove(true) //自动授权配置
                 .secret(passwordEncoder.encode("Jouav1234"))
                 .authorizedGrantTypes("password", "authorization_code", "refresh_token")
                 .accessTokenValiditySeconds(60 * 60 * 24 * 30)
@@ -93,6 +95,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
                 .and()
                 .withClient("jouav_year")
                 .redirectUris("http://localhost:8089/login") //单点登录时配置
+                .autoApprove(true) //自动授权配置
                 .scopes("all")
                 .secret(passwordEncoder.encode("Jouav1234"))
                 .authorizedGrantTypes("password", "authorization_code", "refresh_token")

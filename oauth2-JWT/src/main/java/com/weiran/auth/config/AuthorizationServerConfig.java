@@ -21,7 +21,6 @@ import java.util.List;
 
 /**
  * 认证服务器配置
- * Created by macro on 2019/9/30.
  */
 @Configuration
 @EnableAuthorizationServer
@@ -59,11 +58,13 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
         delegates.add(jwtTokenEnhancer); //配置JWT的内容增强器
         delegates.add(jwtAccessTokenConverter);
         enhancerChain.setTokenEnhancers(delegates);
-        endpoints.authenticationManager(authenticationManager)
-                .userDetailsService(userService)
-                .tokenStore(tokenStore) //配置令牌存储策略
+        endpoints
                 .accessTokenConverter(jwtAccessTokenConverter)
-                .tokenEnhancer(enhancerChain);
+                .tokenEnhancer(enhancerChain)
+                .authenticationManager(authenticationManager)
+                .userDetailsService(userService)
+                .tokenStore(tokenStore) ;//配置令牌存储策略
+
     }
 
     /**

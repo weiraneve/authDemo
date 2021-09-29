@@ -28,4 +28,9 @@ public class testController {
                 .getBody();
     }
 
+    @GetMapping("/show")
+    public String getShow() {
+        return "JWT授权成功！！！";
+    }
+
 }

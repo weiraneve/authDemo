@@ -22,4 +22,9 @@ public class TestController {
         return "Has admin auth!";
     }
 
+    @GetMapping("/show")
+    public String getShow() {
+        return "SSO登陆成功！！！";
+    }
+
 }

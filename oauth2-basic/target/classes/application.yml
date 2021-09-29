@@ -4,16 +4,6 @@ server:
 spring:
   application:
     name: oauth2-service
-#  main:
-#    # Bean同名注册出现的bug，true则是覆盖同名注册的Bean
-#    allow-bean-definition-overriding: true
-#  profiles:
-#    active: weiran
-#  datasource:
-#    driver-class-name: com.mysql.cj.jdbc.Driver
-#    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
-#    username: root
-#    password: 123456
   # redis
   redis:
     # Redis数据库索引（默认为0）
