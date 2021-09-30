@@ -13,9 +13,9 @@ security:
     client:
       client-id: jouav
       client-secret: Jouav1234
-      user-authorization-uri: ${oauth2-server-url}/oauth/authorize
-      access-token-uri: ${oauth2-server-url}/oauth/token
     resource:
-      jwt:
-        key-uri: ${oauth2-server-url}/oauth/token_key
-        key-value: test_key #认证服务器配置的token签名秘钥不配置会启动报错
+      id: oauth2-client
+      user-info-uri: ${oauth2-server-url}/test/info
+#      jwt:
+#        key-uri: ${oauth2-server-url}/oauth/token_key
+#        key-value: test_key #认证服务器配置的token签名秘钥不配置会启动报错

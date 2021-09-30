@@ -9,7 +9,7 @@ import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 /**
  * 使用Jwt存储token的配置
  */
-@Configuration
+//@Configuration
 public class JwtTokenStoreConfig {
 
     @Bean

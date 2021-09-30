@@ -38,34 +38,34 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     @Autowired
     private UserService userService;
 
-////     指定令牌存储策略为普通Redis的token
-//    @Autowired
-//    @Qualifier("redisTokenStore")
-//    private TokenStore tokenStore;
-
+//     指定令牌存储策略为普通Redis的token
     @Autowired
-    @Qualifier("jwtTokenStore")
+    @Qualifier("redisTokenStore")
     private TokenStore tokenStore;
-    @Autowired
-    private JwtAccessTokenConverter jwtAccessTokenConverter;
-    @Autowired
-    private JwtTokenEnhancer jwtTokenEnhancer;
+
+//    @Autowired
+//    @Qualifier("jwtTokenStore")
+//    private TokenStore tokenStore;
+//    @Autowired
+//    private JwtAccessTokenConverter jwtAccessTokenConverter;
+//    @Autowired
+//    private JwtTokenEnhancer jwtTokenEnhancer;
 
     /**
      * 使用密码模式需要配置
      */
     @Override
     public void configure(AuthorizationServerEndpointsConfigurer endpoints) {
-        TokenEnhancerChain enhancerChain = new TokenEnhancerChain();
-        List<TokenEnhancer> delegates = new ArrayList<>();
-        delegates.add(jwtTokenEnhancer); // 配置JWT的内容增强器
-        delegates.add(jwtAccessTokenConverter);
-        enhancerChain.setTokenEnhancers(delegates);
+//        TokenEnhancerChain enhancerChain = new TokenEnhancerChain();
+//        List<TokenEnhancer> delegates = new ArrayList<>();
+//        delegates.add(jwtTokenEnhancer); // 配置JWT的内容增强器
+//        delegates.add(jwtAccessTokenConverter);
+//        enhancerChain.setTokenEnhancers(delegates);
         endpoints.authenticationManager(authenticationManager)
                 .userDetailsService(userService)
-                .tokenStore(tokenStore) // 配置令牌存储策略
-                .accessTokenConverter(jwtAccessTokenConverter)
-                .tokenEnhancer(enhancerChain);
+                .tokenStore(tokenStore); // 配置令牌存储策略
+//                .accessTokenConverter(jwtAccessTokenConverter)
+//                .tokenEnhancer(enhancerChain);
     }
 
     /**

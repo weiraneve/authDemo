@@ -9,11 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 import java.nio.charset.StandardCharsets;
+import java.security.Principal;
 
 
 @RestController
 @RequestMapping("/test")
-public class testController {
+public class TestController {
 
     /**
      *  使用jjwt工具类来解析Authorization头中存储的JWT内容
@@ -31,6 +32,11 @@ public class testController {
     @GetMapping("/show")
     public String getShow() {
         return "JWT授权成功！！！";
+    }
+
+    @GetMapping("/info")
+    public Principal user(Principal user) {
+        return user;
     }
 
 }

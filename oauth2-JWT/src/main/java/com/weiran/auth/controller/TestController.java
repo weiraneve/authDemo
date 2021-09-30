@@ -13,7 +13,7 @@ import java.nio.charset.StandardCharsets;
 
 @RestController
 @RequestMapping("/test")
-public class testController {
+public class TestController {
 
     /**
      *  使用jjwt工具类来解析Authorization头中存储的JWT内容
