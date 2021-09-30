@@ -28,6 +28,7 @@
         <module>oauth2-sso</module>
         <module>oauth2-sso-client</module>
         <module>oauth2-form</module>
+        <module>oauth2-GJN</module>
     </modules>
 
     <properties>
