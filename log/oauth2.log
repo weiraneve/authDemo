@@ -1,0 +1,171 @@
+--------------> 2021-10-05 23:29:25 [main] INFO  c.w.auth.OauthSsoClientApplication - The following profiles are active: weiran
+--------------> 2021-10-05 23:29:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+--------------> 2021-10-05 23:29:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+--------------> 2021-10-05 23:29:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+--------------> 2021-10-05 23:29:25 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=9014d91f-1d1f-336e-8a5d-2ecb968f534e
+--------------> 2021-10-05 23:29:25 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@70e13fa' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+--------------> 2021-10-05 23:29:25 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+--------------> 2021-10-05 23:29:25 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8089 (http)
+--------------> 2021-10-05 23:29:25 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8089"]
+--------------> 2021-10-05 23:29:25 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+--------------> 2021-10-05 23:29:25 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+--------------> 2021-10-05 23:29:26 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+--------------> 2021-10-05 23:29:26 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 841 ms
+--------------> 2021-10-05 23:29:26 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+--------------> 2021-10-05 23:29:26 [main] INFO  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 83efe7fe-91b9-4cee-bb29-9e8c7e2d6654
+
+--------------> 2021-10-05 23:29:26 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34045582, org.springframework.security.web.context.SecurityContextPersistenceFilter@47044f7d, org.springframework.security.web.header.HeaderWriterFilter@7f8a9454, org.springframework.security.web.authentication.logout.LogoutFilter@7558c24b, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@102c18e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@8fcc534, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6b162ecc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3db65c0d, org.springframework.security.web.session.SessionManagementFilter@679d0be8, org.springframework.security.web.access.ExceptionTranslationFilter@3757e8e2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@dbed7fd]
+--------------> 2021-10-05 23:29:26 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/**'], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@46394f65, org.springframework.security.web.context.SecurityContextPersistenceFilter@357f6391, org.springframework.security.web.header.HeaderWriterFilter@3b11620a, org.springframework.security.web.csrf.CsrfFilter@bb3ecfe, org.springframework.security.web.authentication.logout.LogoutFilter@349c4d1c, org.springframework.security.oauth2.client.filter.OAuth2ClientAuthenticationProcessingFilter@31aab981, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@689faf79, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@582e9152, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@26be9a6, org.springframework.security.web.session.SessionManagementFilter@2fd1ad8a, org.springframework.security.web.access.ExceptionTranslationFilter@7a04f730, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@60b5e80d]
+--------------> 2021-10-05 23:29:26 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3e856100, org.springframework.security.web.context.SecurityContextPersistenceFilter@62b6c045, org.springframework.security.web.header.HeaderWriterFilter@21f7e537, org.springframework.security.web.csrf.CsrfFilter@a2b54e3, org.springframework.security.web.authentication.logout.LogoutFilter@370c9018, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@482c351d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@240f350a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6e9a0bea, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2c1d57bc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58f254b1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46b2dcc5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@28fc1132, org.springframework.security.web.session.SessionManagementFilter@32ea16b7, org.springframework.security.web.access.ExceptionTranslationFilter@5c4cc644, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1a14fdf0]
+--------------> 2021-10-05 23:29:27 [main] WARN  o.s.c.s.o.SpringCloudSecurityAutoConfiguration - All Spring Cloud Security modules and starters are deprecated. They will be moved to individual projects in the next major release.
+--------------> 2021-10-05 23:29:27 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+--------------> 2021-10-05 23:29:27 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8089"]
+--------------> 2021-10-05 23:29:27 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8089 (http) with context path ''
+--------------> 2021-10-05 23:29:27 [main] INFO  c.w.auth.OauthSsoClientApplication - Started OauthSsoClientApplication in 2.416 seconds (JVM running for 3.067)
+--------------> 2021-10-05 23:29:27 [RMI TCP Connection(2)-192.168.1.10] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+--------------> 2021-10-05 23:29:27 [RMI TCP Connection(2)-192.168.1.10] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+--------------> 2021-10-05 23:29:27 [RMI TCP Connection(2)-192.168.1.10] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+--------------> 2021-10-05 23:29:29 [main] INFO  c.w.auth.Oauth2ServerApplication - The following profiles are active: weiran
+--------------> 2021-10-05 23:29:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+--------------> 2021-10-05 23:29:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+--------------> 2021-10-05 23:29:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5ms. Found 0 Redis repository interfaces.
+--------------> 2021-10-05 23:29:29 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=1cdc8eb9-855d-332d-adcb-d9477faaead4
+--------------> 2021-10-05 23:29:29 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+--------------> 2021-10-05 23:29:29 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+--------------> 2021-10-05 23:29:29 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+--------------> 2021-10-05 23:29:29 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+--------------> 2021-10-05 23:29:29 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+--------------> 2021-10-05 23:29:29 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 649 ms
+--------------> 2021-10-05 23:29:30 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalStateException: @Order on WebSecurityConfigurers must be unique. Order of 100 was already used on com.weiran.auth.config.SecurityConfig$$EnhancerBySpringCGLIB$$ead639ad@58b5a2f3, so it cannot be used on org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2SsoDefaultConfiguration$$EnhancerBySpringCGLIB$$37043a1f@25f15f50 too.
+--------------> 2021-10-05 23:29:30 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+--------------> 2021-10-05 23:29:30 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+--------------> 2021-10-05 23:29:30 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalStateException: @Order on WebSecurityConfigurers must be unique. Order of 100 was already used on com.weiran.auth.config.SecurityConfig$$EnhancerBySpringCGLIB$$ead639ad@58b5a2f3, so it cannot be used on org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2SsoDefaultConfiguration$$EnhancerBySpringCGLIB$$37043a1f@25f15f50 too.
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.weiran.auth.Oauth2ServerApplication.main(Oauth2ServerApplication.java:11)
+Caused by: java.lang.IllegalStateException: @Order on WebSecurityConfigurers must be unique. Order of 100 was already used on com.weiran.auth.config.SecurityConfig$$EnhancerBySpringCGLIB$$ead639ad@58b5a2f3, so it cannot be used on org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2SsoDefaultConfiguration$$EnhancerBySpringCGLIB$$37043a1f@25f15f50 too.
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration.setFilterChainProxySecurityConfigurer(WebSecurityConfiguration.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:755)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 18 common frames omitted
+--------------> 2021-10-05 23:31:25 [main] INFO  c.w.auth.Oauth2ServerApplication - The following profiles are active: weiran
+--------------> 2021-10-05 23:31:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+--------------> 2021-10-05 23:31:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+--------------> 2021-10-05 23:31:25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7ms. Found 0 Redis repository interfaces.
+--------------> 2021-10-05 23:31:25 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=1cdc8eb9-855d-332d-adcb-d9477faaead4
+--------------> 2021-10-05 23:31:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+--------------> 2021-10-05 23:31:26 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+--------------> 2021-10-05 23:31:26 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+--------------> 2021-10-05 23:31:26 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+--------------> 2021-10-05 23:31:26 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+--------------> 2021-10-05 23:31:26 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 893 ms
+--------------> 2021-10-05 23:31:26 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalStateException: @Order on WebSecurityConfigurers must be unique. Order of 100 was already used on com.weiran.auth.config.SecurityConfig$$EnhancerBySpringCGLIB$$ead639ad@58b5a2f3, so it cannot be used on org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2SsoDefaultConfiguration$$EnhancerBySpringCGLIB$$37043a1f@25f15f50 too.
+--------------> 2021-10-05 23:31:26 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+--------------> 2021-10-05 23:31:26 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+--------------> 2021-10-05 23:31:26 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalStateException: @Order on WebSecurityConfigurers must be unique. Order of 100 was already used on com.weiran.auth.config.SecurityConfig$$EnhancerBySpringCGLIB$$ead639ad@58b5a2f3, so it cannot be used on org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2SsoDefaultConfiguration$$EnhancerBySpringCGLIB$$37043a1f@25f15f50 too.
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.weiran.auth.Oauth2ServerApplication.main(Oauth2ServerApplication.java:11)
+Caused by: java.lang.IllegalStateException: @Order on WebSecurityConfigurers must be unique. Order of 100 was already used on com.weiran.auth.config.SecurityConfig$$EnhancerBySpringCGLIB$$ead639ad@58b5a2f3, so it cannot be used on org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2SsoDefaultConfiguration$$EnhancerBySpringCGLIB$$37043a1f@25f15f50 too.
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration.setFilterChainProxySecurityConfigurer(WebSecurityConfiguration.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:755)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 18 common frames omitted
+--------------> 2021-10-05 23:31:40 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+--------------> 2021-10-05 23:36:14 [main] INFO  c.w.auth.Oauth2ServerApplication - The following profiles are active: weiran
+--------------> 2021-10-05 23:36:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+--------------> 2021-10-05 23:36:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+--------------> 2021-10-05 23:36:15 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+--------------> 2021-10-05 23:36:15 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=1cdc8eb9-855d-332d-adcb-d9477faaead4
+--------------> 2021-10-05 23:36:15 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8088 (http)
+--------------> 2021-10-05 23:36:15 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+--------------> 2021-10-05 23:36:15 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+--------------> 2021-10-05 23:36:15 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+--------------> 2021-10-05 23:36:15 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+--------------> 2021-10-05 23:36:15 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 756 ms
+--------------> 2021-10-05 23:36:16 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalStateException: @Order on WebSecurityConfigurers must be unique. Order of 100 was already used on com.weiran.auth.config.SecurityConfig$$EnhancerBySpringCGLIB$$ead639ad@2954f6ab, so it cannot be used on org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2SsoDefaultConfiguration$$EnhancerBySpringCGLIB$$37043a1f@58fbd02e too.
+--------------> 2021-10-05 23:36:16 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+--------------> 2021-10-05 23:36:16 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+--------------> 2021-10-05 23:36:16 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalStateException: @Order on WebSecurityConfigurers must be unique. Order of 100 was already used on com.weiran.auth.config.SecurityConfig$$EnhancerBySpringCGLIB$$ead639ad@2954f6ab, so it cannot be used on org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2SsoDefaultConfiguration$$EnhancerBySpringCGLIB$$37043a1f@58fbd02e too.
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.weiran.auth.Oauth2ServerApplication.main(Oauth2ServerApplication.java:11)
+Caused by: java.lang.IllegalStateException: @Order on WebSecurityConfigurers must be unique. Order of 100 was already used on com.weiran.auth.config.SecurityConfig$$EnhancerBySpringCGLIB$$ead639ad@2954f6ab, so it cannot be used on org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2SsoDefaultConfiguration$$EnhancerBySpringCGLIB$$37043a1f@58fbd02e too.
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration.setFilterChainProxySecurityConfigurer(WebSecurityConfiguration.java:147)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredMethodElement.inject(AutowiredAnnotationBeanPostProcessor.java:755)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 18 common frames omitted

@@ -7,17 +7,26 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="oauth2-basic" />
-        <module name="oauth2-sso" />
+        <module name="oauth2-GJN-gateway" />
+        <module name="oauth2-GJN-auth" />
         <module name="oauth2-JWT" />
         <module name="oauth2-sso-client" />
+        <module name="oauth2-form" />
+        <module name="oauth2-GJN-api" />
+        <module name="oauth2-basic" />
+        <module name="oauth2-sso" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="oauth2-GJN" options="-parameters" />
+      <module name="oauth2-GJN-api" options="-parameters" />
+      <module name="oauth2-GJN-auth" options="-parameters" />
+      <module name="oauth2-GJN-gateway" options="-parameters" />
       <module name="oauth2-JWT" options="-parameters" />
       <module name="oauth2-basic" options="-parameters" />
+      <module name="oauth2-form" options="-parameters" />
       <module name="oauth2-sso" options="-parameters" />
       <module name="oauth2-sso-client" options="-parameters" />
     </option>
