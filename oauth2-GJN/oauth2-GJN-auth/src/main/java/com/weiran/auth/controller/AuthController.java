@@ -26,6 +26,7 @@ public class AuthController {
 
     /**
      * Oauth2登录认证
+     * 自定义实现Oauth2默认的登录认证接口
      */
     @RequestMapping(value = "/token", method = RequestMethod.POST)
     public CommonResult<Oauth2TokenDto> postAccessToken(Principal principal, @RequestParam Map<String, String> parameters) throws HttpRequestMethodNotSupportedException {
@@ -34,7 +35,7 @@ public class AuthController {
                 .token(oAuth2AccessToken.getValue())
                 .refreshToken(oAuth2AccessToken.getRefreshToken().getValue())
                 .expiresIn(oAuth2AccessToken.getExpiresIn())
-                .tokenHead("Bearer ").build();
+                .tokenHead("bearer ").build();
 
         return CommonResult.success(oauth2TokenDto);
     }

@@ -26,3 +26,10 @@ spring:
         max-idle: 10
         # 连接池中的最小空闲连接
         min-idle: 0
+
+#security:
+#  oauth2:
+#    resource:
+#      id: uaa
+#      user-info-uri: http://localhost:8088/test/info
+#      prefer-token-info: false

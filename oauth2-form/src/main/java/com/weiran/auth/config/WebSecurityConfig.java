@@ -13,7 +13,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
  * discription: Security 配置
  * ResourceServerConfig 是比 SecurityConfig 的优先级低
  * SecurityConfig 用于保护 oauth 要开放的资源，
- * 同时主要作用于client端以及token的认证(Bearer auth)
+ * 同时主要作用于client端以及token的认证(bearer auth)
  */
 @Configuration
 @EnableWebSecurity

@@ -33,7 +33,7 @@ public class AuthGlobalFilter implements GlobalFilter, Ordered {
         }
         try {
             //从token中解析用户信息并设置到Header中去
-            String realToken = token.replace("Bearer ", "");
+            String realToken = token.replace("bearer ", "");
             JWSObject jwsObject = JWSObject.parse(realToken);
             String userStr = jwsObject.getPayload().toString();
             LOGGER.info("AuthGlobalFilter.filter() user:{}",userStr);
