@@ -15,6 +15,7 @@
         <module name="oauth2-GJN-api" />
         <module name="oauth2-basic" />
         <module name="oauth2-sso" />
+        <module name="satoken-basic" />
       </profile>
     </annotationProcessing>
   </component>
@@ -29,6 +30,8 @@
       <module name="oauth2-form" options="-parameters" />
       <module name="oauth2-sso" options="-parameters" />
       <module name="oauth2-sso-client" options="-parameters" />
+      <module name="satoken-basic" options="-parameters" />
+      <module name="satokenDemo" options="-parameters" />
     </option>
   </component>
 </project>
