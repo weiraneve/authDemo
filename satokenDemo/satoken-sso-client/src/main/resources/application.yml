@@ -1,0 +1,62 @@
+# 端口
+server:
+  port: 8083
+
+spring:
+  main:
+    # Bean同名注册出现的bug，true则是覆盖同名注册的Bean
+    allow-bean-definition-overriding: true
+  profiles:
+    active: weiran
+  thymeleaf:
+    cache: false
+  # redis Sa-token的框架集成，只需要引入maven依赖就可以了
+  redis:
+    # Redis数据库索引（默认为0）
+    database: 0
+    # Redis服务器地址
+    host: 127.0.0.1
+    # Redis服务器连接端口
+    port: 6379
+    # Redis服务器连接密码（默认为空）
+    password: 123456
+    # 连接超时时间（毫秒）
+    timeout: 5000
+    lettuce:
+      pool:
+        # 连接池最大连接数
+        max-active: 200
+        # 连接池最大阻塞等待时间（使用负值表示没有限制）
+        max-wait: -1ms
+        # 连接池中的最大空闲连接
+        max-idle: 10
+        # 连接池中的最小空闲连接
+        min-idle: 0
+
+# sa-token配置
+sa-token:
+  token-name: satoken-sso
+  # token有效期，单位s 默认30天, -1代表永不过期
+  timeout: 60
+  # token临时有效期 (指定时间内无操作就视为token过期) 单位: 秒
+  activity-timeout: 60
+  # SSO-相关配置
+  sso:
+    # SSO-Server端 统一认证地址
+    auth-url: http://127.0.0.1:8081/sso/auth
+    # 是否打开单点注销接口
+    is-slo: true
+  # 配置Sa-Token单独使用的Redis连接 （此处需要和SSO-Server端连接同一个Redis）
+#  alone-redis:
+#    # Redis数据库索引 (默认为0)
+#    database: 1
+#    # Redis服务器地址
+#    host: 127.0.0.1
+#    # Redis服务器连接端口
+#    port: 6379
+#    # Redis服务器连接密码（默认为空）
+#    password: 123456
+
+#日志配置文件
+#logging:
+# config: classpath:logback.xml
