@@ -33,6 +33,7 @@
     </modules>
 
     <properties>
+        <mybatisPlus-version>3.4.1</mybatisPlus-version>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>

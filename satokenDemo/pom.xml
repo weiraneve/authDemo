@@ -13,6 +13,12 @@
     <packaging>pom</packaging>
     <modules>
         <module>satoken-basic</module>
+        <module>satoken-oauth2</module>
+        <module>satoken-oauth2-client</module>
+        <module>satoken-oauth2</module>
+        <module>satoken-oauth2-client</module>
+        <module>satoken-sso</module>
+        <module>satoken-sso-client</module>
     </modules>
 
     <dependencies>

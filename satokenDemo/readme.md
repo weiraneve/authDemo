@@ -9,6 +9,9 @@
 
 ## 使用
 - satoken-basic模块集成了一些比较基础的功能，拦截器、过滤器、监听器等，以及框架部分功能。
+- satoken-sso完成了SSO功能。
+- satoken-oauth2完成了Satoken框架下集成Oauth2协议。
+- satoken-sso-client、satoken-oauth2-client作为分别集成鉴权功能的客户端
 
 ## 底层
 等待更新
