@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" href="https://www.layuicdn.com/layui/css/layui.css" />
+    <link rel="stylesheet" href="css/adminLogin.css">
+    <script src="https://www.layuicdn.com/layui/layui.js"></script>
+</head>
+<body style="background: url(img/1.jpg);">
+<div class="wrap">
+    <div class="loginForm">
+        <form id="loginFormSubmit">
+            <div class="logoHead">
+            </div>
+            <div class="usernameWrapDiv">
+                <div class="usernameLabel">
+                    <label>用户名:</label>
+                </div>
+                <div class="usernameDiv">
+                    <i class="layui-icon layui-icon-username adminIcon"></i>
+                    <input id="loginUsername" class="layui-input adminInput" type="text" name="username" placeholder="输入用户名" >
+                </div>
+            </div>
+            <div class="usernameWrapDiv">
+                <div class="usernameLabel">
+                    <label>密码:</label>
+                </div>
+                <div class="passwordDiv">
+                    <i class="layui-icon layui-icon-password adminIcon"></i>
+                    <input id="loginPassword" class="layui-input adminInput" type="password" name="password" placeholder="输入密码">
+                </div>
+            </div>
+            <br/>
+
+            <div class="usernameWrapDiv">
+                <div class="submitDiv">
+                    <input id="loginBtn" type="button" class="submit layui-btn layui-btn-primary" lay-submit lay-filter="login-submit" value="登录"/>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+</body>
+<script>
+    layui.use(['form', 'jquery'], function () {
+        var $ = layui.jquery;
+        var form = layui.form;
+        //登录提交
+        form.on('submit(login-submit)', function () {
+            $.ajax({
+                // 此处为配置类的登录处理接口
+                url:"/user/login",
+                // 提交方法必须是post
+                method:'post',
+                // 将整个form表单序列化，提交到后端
+                data:$("#loginFormSubmit").serialize(),
+                success:function (msg) {
+                    // 状态码为 Msg类自定义的，当然你可以随意改动
+                    if (msg.code == 100) {
+                        layer.alert('账号或密码错误，请重试', {
+                            icon: 5,
+                            title: "提示"
+                        });
+                    } else {
+                        // 登录成功后要跳转到的页面
+                        window.location.href = "index.html"
+                    }
+                },
+                error:function (err) {
+                    console.log(err)
+                    // 如果网页有图片没有，请删除或注释掉引入图片的代码，否则第一次点击会出现这个提示
+                    layer.alert('发生了未知的错误，请联系管理员解决', {
+                        icon: 5,
+                        title: "提示"
+                    });
+                }
+            });
+        });
+    });
+</script>
+</html>
+
