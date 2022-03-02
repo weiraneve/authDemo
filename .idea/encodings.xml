@@ -15,5 +15,6 @@
     <file url="file://$PROJECT_DIR$/satokenDemo/satoken-sso-client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/satokenDemo/satoken-sso/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springsecurity-login/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springsecurity-token/src/main/java" charset="UTF-8" />
   </component>
 </project>

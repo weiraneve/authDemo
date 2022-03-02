@@ -31,6 +31,7 @@
         <module>oauth2-GJN</module>
         <module>satokenDemo</module>
         <module>springsecurity-login</module>
+        <module>springsecurity-token</module>
     </modules>
 
     <properties>

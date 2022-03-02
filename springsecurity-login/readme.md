@@ -5,7 +5,7 @@
 - Springboot+SpringSecurity不用模板引擎完成登录功能
 
 ## 使用
-只有简单的登陆集成
+只有简单的登陆集成,login.sql在db文件夹中
 
 ## 底层
 等待更新

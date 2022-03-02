@@ -19,7 +19,7 @@ public class Authority implements Serializable {
     private String password;
     @TableField("phone")
     private String phone;
-//    @TableField("authority")
-//    private String authority;
+    @TableField("authority")
+    private String authority;
 
 }

@@ -45,7 +45,6 @@ public class AuthorityServiceImpl implements AuthorityService {
     }
 
     // 指定一个权限，拥有该权限的才能登录，这里是写死，即使没有设定权限不影响登陆
-    // 数据库里边存的是 ADMIN，并不是 ROLE_ADMIN
     private List<GrantedAuthority> getAuthority() {
         return AuthorityUtils.commaSeparatedStringToAuthorityList("ROLE_ADMIN");
 

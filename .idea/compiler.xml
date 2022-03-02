@@ -21,6 +21,7 @@
         <module name="satoken-sso-client" />
         <module name="satoken-oauth2-client" />
         <module name="springsecurity-login" />
+        <module name="springsecurity-token" />
       </profile>
     </annotationProcessing>
   </component>
@@ -42,6 +43,7 @@
       <module name="satoken-sso-client" options="-parameters" />
       <module name="satokenDemo" options="-parameters" />
       <module name="springsecurity-login" options="-parameters" />
+      <module name="springsecurity-token" options="-parameters" />
     </option>
   </component>
 </project>
